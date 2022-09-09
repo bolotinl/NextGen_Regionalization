@@ -1,4 +1,4 @@
-setwd("C:/Users/yuqiong.liu/Desktop/Ngen/regionalization/scripts")
+# retrieve Polaris soils data from VRT for HUC-01
 
 library(zonal)
 library(sf)

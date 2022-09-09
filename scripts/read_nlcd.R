@@ -1,5 +1,3 @@
-setwd("C:/Users/yuqiong.liu/Desktop/Ngen/regionalization/scripts")
-
 library(zonal)
 library(sf)
 library(terra)

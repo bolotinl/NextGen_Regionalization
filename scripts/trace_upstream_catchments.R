@@ -1,3 +1,6 @@
+
+# identify upstream catchments for a given gage based on the hydrofabric data
+
 setwd("C:/Users/yuqiong.liu/Desktop/Ngen/regionalization/scripts")
 
 rm(list=ls())
