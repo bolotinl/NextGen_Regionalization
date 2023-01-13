@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# submit HUC-01 simulations with regionalized parameters
+
 dir1=/home/yuqiong.liu/NextGen_Regionalization/agu2022
 dir2=/local/ngen/data/fihm
 
