@@ -24,14 +24,13 @@ import time
 
 # local functions for the algorithms 
 import sys
-sys.path.append('./NWMv4/algorithm/')
+sys.path.append('../algorithm/')
 import funcs_clust
 import funcs_dist
 import my_utils
 
 # read configuration (algorithm parameters etc)
-os.chdir('./NWMv4/ams2024/')
-with open('data/config_huc12.yaml', 'r') as stream:
+with open('data/config.yaml', 'r') as stream:
     try:
         config = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
@@ -70,7 +69,7 @@ print('Total number of calibration basins: ' + str(len(set(cwt.loc[cwt['gages'].
 # sort the rows so that donors are at the top
 dfAttrAll = dfAttrAll.sort_values(by="tag")
 
-# determine whether the catchment is snowy (as snowy and non-snowy catchments are processed separately)
+# detemine whether the catchment is snowy (as snowy and non-snowy catchments are processed separately)
 dfAttrAll['snowy'] = dfAttrAll['snow_frac'].apply(lambda x: True if x >= config['pars']['general']['minSnowFrac'] else False)
 
 # columns in the attrs table that are not actual attributes
